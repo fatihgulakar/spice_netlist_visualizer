@@ -1,0 +1,13 @@
+M1 N003 Vbias 0 0 NMOS l=180n w=1u
+M2 N001 Vinp N003 0 NMOS l=180n w=1u
+M3 N002 Vinn N003 0 NMOS l=180n w=1u
+M4 VDD N001 N002 VDD PMOS l=180n w=2.5u
+M5 VDD N001 N001 VDD PMOS l=180n w=2.5u
+.model NMOS NMOS
+.model PMOS PMOS
+*>> pairs M2 M3
+*>> pairs M4 M5
+*>> port input Vinp
+*>> port input Vinn
+*>> port input Vbias
+.end

@@ -1,0 +1,12 @@
+* C:\Users\Mustafa\Desktop\633project\MustafaKızmaz_EE633FinalProject\in_nand2.asc
+M2 VDD A N001 VDD PMOS l=180n w=2.5u
+M3 VDD B N001 VDD PMOS l=180n w=2.5u
+M1 N001 A N002 0 NMOS l=180n w=2.5u
+M4 N002 B 0 0 NMOS l=180n w=2.5u
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\Mustafa\Documents\LTspiceXVII\lib\cmp\standard.mos
+.backanno
+*>> port input A
+*>> port input B
+.end
